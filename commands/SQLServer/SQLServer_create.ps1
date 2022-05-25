@@ -12,7 +12,7 @@ $Global:SQLAdminUser = "alexadmin"
 $Global:SQLAdminPassword = "p@ssword1234"
 "SQL Admin password : " + $SQLAdminPassword
 
-$Global:SQLServerName = "flask-sql-server"
+$Global:SQLServerName = "migration-sql-server"
 "SQL server name : " + $SQLServerName
 
 $Global:SQLLocation = "francecentral"
@@ -21,7 +21,7 @@ $Global:SQLLocation = "francecentral"
 $Global:SQLEnablePublicNetwork = "true"
 "SQL enable public network : " + $SQLEnablePublicNetwork
 
-$Global:SQLBDName = "flask-db"
+$Global:SQLBDName = "migration-db"
 "DB name : " + $SQLBDName
 
 $Global:FirewallRuleName = "azureaccess"
@@ -106,7 +106,7 @@ az sql db create `
 #######################################################################
 # Next step :
 
-"Now run : starter\script\script.sql in the azure SQL console to create the tables, then run commands\StorageAccount\StorageAccount_create.ps1"
+"Now run : starter\script\script.sql in the azure SQL console to create the tables"
 
 
 

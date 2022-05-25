@@ -14,7 +14,7 @@ $Global:Subscription = "Azure subscription 1"
 $Global:RGLocation = "centralus"
 "resource Group Location : " + $RGLocation
 
-$Global:RGName = "vmss-rg"
+$Global:RGName = "sql-migration-rg"
 "Resource Group Name : " + $RGName
 
 
@@ -35,13 +35,7 @@ $Global:SAKey = "SAKey"
 $script = "commands\ResourceGroup\ResourceGroup_create.ps1"
 .$script
 
-$script = "commands\ScaleSet\VMSS_create_all.ps1"
-.$script
-
-$script = "commands\VirtualMachine\VM_connect.ps1"
-.$script
-
-$script = "commands\ApplicationGateway\AG_create.ps1"
+$script = "commands\SQLServer\SQLServer_create.ps1"
 .$script
 
 
